@@ -1,21 +1,301 @@
+
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<title>Amine Hajji Portfolio</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amine Hajji - Portfolio Professionnel</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
+<body class="bg-[#f4f7fc] text-slate-800 antialiased">
 
-<body>
+    <!-- ========== 1. NAVIGATION BAR ========== -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 px-4 lg:px-12 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <span class="bg-blue-600 text-white font-black px-2.5 py-1 rounded-lg text-base italic tracking-wider">AI</span>
+            <span class="font-bold text-[#0f2c59] text-lg tracking-tight">Amine Hajji</span>
+        </div>
+        
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex space-x-7 text-xs font-semibold uppercase tracking-wider text-slate-600">
+            <a href="#accueil" class="text-blue-600 transition">Accueil</a>
+            <a href="#apropos" class="hover:text-blue-600 transition">À propos</a>
+            <a href="#competences" class="hover:text-blue-600 transition">Compétences</a>
+            <a href="#experience" class="hover:text-blue-600 transition">Expérience</a>
+            <a href="#realisations" class="hover:text-blue-600 transition">Réalisations</a>
+            <a href="#certifications" class="hover:text-blue-600 transition">Certifications</a>
+            <a href="#galerie" class="hover:text-blue-600 transition">Galerie</a>
+            <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+        </div>
 
-<h1>Amine Hajji</h1>
+        <a href="#contact" class="bg-[#0f2c59] text-white text-xs font-bold px-5 py-2.5 rounded-full hover:bg-blue-700 transition shadow-sm flex items-center space-x-2">
+            <i class="fa-regular fa-paper-plane"></i>
+            <span>Me contacter</span>
+        </a>
+    </nav>
 
-<h2>IT Specialist | Digital Transformation | Artificial Intelligence</h2>
+    <!-- ========== 2. HERO SECTION ========== -->
+    <section id="accueil" class="max-w-7xl mx-auto px-6 lg:px-12 pt-12 pb-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Text Content Left -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left order-2 lg:order-1">
+            <h1 class="text-5xl lg:text-6xl font-black text-[#0f2c59] tracking-tight leading-none">
+                Amine Hajji
+            </h1>
+            <p class="text-base lg:text-lg font-semibold text-cyan-600 tracking-wide uppercase">
+                IT Specialist | Ministry of Justice <br class="sm:hidden"> | Artificial Intelligence | Digital Creator
+            </p>
+            <p class="text-slate-600 max-w-xl mx-auto lg:mx-0 text-sm lg:text-base leading-relaxed font-normal">
+                Informaticien passionné au Ministère de la Justice en Tunisie. J'accompagne la transformation numérique de l'administration publique avec expertise, innovation et engagement.
+            </p>
+            
+            <!-- Actions -->
+            <div class="flex flex-wrap justify-center lg:justify-start gap-4 pt-2">
+                <a href="#" class="bg-[#0f2c59] text-white text-sm font-semibold px-6 py-3.5 rounded-xl shadow-md shadow-blue-900/10 hover:bg-slate-800 transition flex items-center space-x-2">
+                    <i class="fa-solid fa-download text-xs"></i>
+                    <span>Télécharger mon CV</span>
+                </a>
+                <a href="#contact" class="bg-white border border-slate-200 text-slate-700 text-sm font-semibold px-6 py-3.5 rounded-xl hover:bg-slate-50 transition flex items-center space-x-2">
+                    <i class="fa-regular fa-paper-plane text-xs"></i>
+                    <span>Me connecter</span>
+                </a>
+            </div>
 
-<p>
-Informaticien au Ministère de la Justice tunisien,
-spécialisé en systèmes, réseaux et transformation numérique.
-</p>
+            <!-- Quick Stats Counters -->
+            <div class="grid grid-cols-3 gap-6 pt-8 max-w-md mx-auto lg:mx-0 border-t border-slate-200/80">
+                <div class="text-center lg:text-left">
+                    <div class="flex items-center justify-center lg:justify-start space-x-2 text-blue-600 font-extrabold text-2xl">
+                        <i class="fa-solid fa-briefcase text-sm opacity-80"></i>
+                        <span>10+</span>
+                    </div>
+                    <p class="text-[11px] font-medium text-slate-500 uppercase tracking-wider mt-1">Années d'expérience</p>
+                </div>
+                <div class="text-center lg:text-left">
+                    <div class="flex items-center justify-center lg:justify-start space-x-2 text-blue-600 font-extrabold text-2xl">
+                        <i class="fa-solid fa-laptop-code text-sm opacity-80"></i>
+                        <span>30+</span>
+                    </div>
+                    <p class="text-[11px] font-medium text-slate-500 uppercase tracking-wider mt-1">Projets réalisés</p>
+                </div>
+                <div class="text-center lg:text-left">
+                    <div class="flex items-center justify-center lg:justify-start space-x-2 text-blue-600 font-extrabold text-2xl">
+                        <i class="fa-solid fa-award text-sm opacity-80"></i>
+                        <span>15+</span>
+                    </div>
+                    <p class="text-[11px] font-medium text-slate-500 uppercase tracking-wider mt-1">Certifications</p>
+                </div>
+            </div>
+        </div>
 
-</body>
-</html>
+        <!-- Decorative Artwork Right -->
+        <div class="lg:col-span-5 flex justify-center relative order-1 lg:order-2 py-8">
+            <!-- Background Circular Abstract Grid -->
+            <div class="absolute w-80 h-80 md:w-[420px] md:h-[420px] bg-gradient-to-tr from-blue-100/70 to-cyan-50/50 rounded-full -z-10 flex items-center justify-center">
+                <div class="w-64 h-64 md:w-80 md:h-80 border-2 border-dashed border-blue-200/60 rounded-full animate-[spin_40s_linear_infinite]"></div>
+            </div>
+            
+            <!-- Main Avatar Container -->
+            <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-8 border-white shadow-2xl overflow-hidden bg-slate-300">
+                <!-- Replace with exact image link or leave as modern professional placeholder -->
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400" alt="Amine Hajji" class="w-full h-full object-cover object-top">
+            </div>
+
+            <!-- Floating Badges / Graphic Elements -->
+            <div class="absolute top-10 left-4 bg-white p-3 rounded-full shadow-md text-blue-600 text-sm border border-slate-100 flex items-center justify-center w-10 h-10">
+                <i class="fa-solid fa-gavel"></i>
+            </div>
+            <div class="absolute bottom-12 left-2 bg-white p-3 rounded-full shadow-md text-cyan-600 text-sm border border-slate-100 flex items-center justify-center w-10 h-10">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="absolute top-16 right-4 bg-white p-3 rounded-full shadow-md text-indigo-600 text-sm border border-slate-100 flex items-center justify-center w-10 h-10">
+                <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <div class="absolute bottom-20 right-2 bg-white p-3 rounded-full shadow-md text-blue-500 text-sm border border-slate-100 flex items-center justify-center w-10 h-10">
+                <span class="font-bold text-[10px]">AI</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 3. À PROPOS DE MOI ========== -->
+    <section id="apropos" class="bg-white py-20 border-t border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
+            
+            <!-- Left Side Text Description -->
+            <div class="lg:col-span-5 space-y-5">
+                <div class="inline-block bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-md">
+                    Mon Profil
+                </div>
+                <h2 class="text-3xl font-bold text-[#0f2c59] tracking-tight">
+                    À propos de moi
+                </h2>
+                <div class="text-slate-600 text-sm leading-relaxed space-y-4">
+                    <p>
+                        Informaticien au Ministère de la Justice, je mets mes compétences au service de la modernisation des systèmes d'information et de l'amélioration des services numériques.
+                    </p>
+                    <p>
+                        Spécialisé en administration systèmes, réseaux, cybersécurité et intelligence artificielle, je suis également créateur de contenu digital (infographies, vidéos, formations) et auteur d'un livre sur l'intelligence artificielle dans le domaine de la justice.
+                    </p>
+                </div>
+                <div class="pt-2">
+                    <button class="bg-blue-600 text-white text-xs font-semibold px-5 py-2.5 rounded-lg hover:bg-blue-700 transition">
+                        En savoir plus
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Side Badges Grid (8 Modules) -->
+            <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- Card 1 -->
+                <div class="bg-[#f4f7fc] p-4 rounded-xl flex items-center space-x-3.5 border border-slate-100">
+                    <div class="bg-white text-blue-600 p-2.5 rounded-lg shadow-sm text-sm"><i class="fa-solid fa-building-shield"></i></div>
+                    <span class="text-xs font-semibold text-slate-700">Administration publique</span>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-[#f4f7fc] p-4 rounded-xl flex items-center space-x-3.5 border border-slate-100">
+                    <div class="bg-white text-blue-600 p-2.5 rounded-lg shadow-sm text-sm"><i class="fa-solid fa-square-share-nodes"></i></div>
+                    <span class="text-xs font-semibold text-slate-700">Transformation numérique</span>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-[#f4f7fc] p-4 rounded-xl flex items-center space-x-3.5 border border-slate-100">
+                    <div class="bg-white text-blue-600 p-2.5 rounded-lg shadow-sm text-sm"><i class="fa-solid fa-network-wired"></i></div>
+                    <span class="text-xs font-semibold text-slate-700">Systèmes & Réseaux</span>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-[#f4f7fc] p-4 rounded-xl flex items-center space-x-3.5 border border-slate-100">
+                    <div class="bg-white text-blue-600 p-2.5 rounded-lg shadow-sm text-sm"><i class="fa-solid fa-photo-film"></i></div>
+                    <span class="text-xs font-semibold text-slate-700">Création de contenu digital</span>
+                </div>
+                <!-- Card 5 -->
+                <div class="bg-[#f4f7fc] p-4 rounded-xl flex items-center space-x-3.5 border border-slate-100">
+                    <div class="bg-white text-blue-600 p-2.5 rounded-lg shadow-sm text-sm"><i class="fa-solid fa-shield-halved"></i></div>
+                    <span class="text-xs font-semibold text-slate-700">Cybersécurité</span>
+                </div>
+                <!-- Card 6 -->
+                <div class="bg-[#f4f7fc] p-4 rounded-xl flex items-center space-x-3.5 border border-slate-100">
+                    <div class="bg-white text-blue-600 p-2.5 rounded-lg shadow-sm text-sm"><i class="fa-solid fa-user-graduate"></i></div>
+                    <span class="text-xs font-semibold text-slate-700">Formation & Accompagnement</span>
+                </div>
+                <!-- Card 7 -->
+                <div class="bg-[#f4f7fc] p-4 rounded-xl flex items-center space-x-3.5 border border-slate-100">
+                    <div class="bg-white text-blue-600 p-2.5 rounded-lg shadow-sm text-sm"><i class="fa-solid fa-brain"></i></div>
+                    <span class="text-xs font-semibold text-slate-700">Intelligence artificielle</span>
+                </div>
+                <!-- Card 8 -->
+                <div class="bg-[#f4f7fc] p-4 rounded-xl flex items-center space-x-3.5 border border-slate-100">
+                    <div class="bg-white text-blue-600 p-2.5 rounded-lg shadow-sm text-sm"><i class="fa-solid fa-chart-line"></i></div>
+                    <span class="text-xs font-semibold text-slate-700">Innovation & Performance</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========== 4. COMPÉTENCES CLÉS ========== -->
+    <section id="competences" class="py-20 max-w-7xl mx-auto px-6 lg:px-12 text-center">
+        <div class="inline-block bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-md mb-3">
+            Savoir-Faire
+        </div>
+        <h2 class="text-3xl font-bold text-[#0f2c59] tracking-tight mb-12">
+            Compétences clés
+        </h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
+            <!-- Box 1 -->
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center space-y-3 hover:shadow-md transition">
+                <div class="text-blue-600 text-2xl"><i class="fa-solid fa-display"></i></div>
+                <p class="text-xs font-semibold text-slate-700 leading-tight">Administration systèmes</p>
+            </div>
+            <!-- Box 2 -->
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center space-y-3 hover:shadow-md transition">
+                <div class="text-blue-600 text-2xl"><i class="fa-solid fa-diagram-project"></i></div>
+                <p class="text-xs font-semibold text-slate-700 leading-tight">Réseaux</p>
+            </div>
+            <!-- Box 3 -->
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center space-y-3 hover:shadow-md transition">
+                <div class="text-blue-600 text-2xl"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                <p class="text-xs font-semibold text-slate-700 leading-tight">Maintenance informatique</p>
+            </div>
+            <!-- Box 4 -->
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center space-y-3 hover:shadow-md transition">
+                <div class="text-blue-600 text-2xl"><i class="fa-solid fa-microchip"></i></div>
+                <p class="text-xs font-semibold text-slate-700 leading-tight">Intelligence artificielle</p>
+            </div>
+            <!-- Box 5 -->
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center space-y-3 hover:shadow-md transition">
+                <div class="text-blue-600 text-2xl"><i class="fa-regular fa-file-word"></i></div>
+                <p class="text-xs font-semibold text-slate-700 leading-tight">Microsoft Office</p>
+            </div>
+            <!-- Box 6 -->
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center space-y-3 hover:shadow-md transition">
+                <div class="text-blue-600 text-2xl"><i class="fa-solid fa-video"></i></div>
+                <p class="text-xs font-semibold text-slate-700 leading-tight">Montage vidéo</p>
+            </div>
+            <!-- Box 7 -->
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center space-y-3 hover:shadow-md transition">
+                <div class="text-blue-600 text-2xl"><i class="fa-regular fa-image"></i></div>
+                <p class="text-xs font-semibold text-slate-700 leading-tight">Traitement d'images</p>
+            </div>
+            <!-- Box 8 -->
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center space-y-3 hover:shadow-md transition">
+                <div class="text-blue-600 text-2xl"><i class="fa-solid fa-graduation-cap"></i></div>
+                <p class="text-xs font-semibold text-slate-700 leading-tight">Formation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 5. EXPÉRIENCE PROFESSIONNELLE ========== -->
+    <section id="experience" class="bg-white py-20 border-t border-b border-slate-100 relative overflow-hidden">
+        <!-- Scales of justice watermark on the background right -->
+        <div class="absolute right-10 bottom-10 text-slate-50 opacity-[0.03] pointer-events-none hidden lg:block">
+            <i class="fa-solid fa-scale-balanced text-[400px]"></i>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <div class="inline-block bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-md mb-3">
+                    Parcours
+                </div>
+                <h2 class="text-3xl font-bold text-[#0f2c59] tracking-tight">
+                    Expérience professionnelle
+                </h2>
+            </div>
+
+            <!-- Timeline Elements -->
+            <div class="relative border-l-2 border-blue-100 pl-6 ml-4 space-y-12">
+                <!-- Item 1 -->
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1.5 bg-blue-600 w-4 h-4 rounded-full border-4 border-white shadow-sm"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                        <span class="text-sm font-bold text-blue-600">2019 - Présent</span>
+                        <span class="text-xs font-medium text-slate-400 uppercase tracking-wider bg-slate-50 px-2 py-0.5 rounded border border-slate-100">Ministère de la Justice</span>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-800">Informaticien - Ministère de la Justice</h3>
+                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                        Gestion et administration des systèmes informatiques, réseaux et sécurité. Participation à la transformation digitale des services judiciaires.
+                    </p>
+                </div>
+                <!-- Item 2 -->
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1.5 bg-blue-500 w-4 h-4 rounded-full border-4 border-white shadow-sm"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                        <span class="text-sm font-bold text-blue-500">2017 - 2019</span>
+                        <span class="text-xs font-medium text-slate-400 uppercase tracking-wider bg-slate-50 px-2 py-0.5 rounded border border-slate-100">Administration</span>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-800">Administrateur Systèmes & Réseaux</h3>
+                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                        Administration des serveurs, supervision des infrastructures et support technique aux utilisateurs.
+                    </p>
+                </div>
+                <!-- Item 3 -->
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1.5 bg-blue-400 w-4 h-4 rounded-full border-4 border-white shadow-sm"></div>
+                    <
